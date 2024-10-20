@@ -5,6 +5,7 @@
     --gray-2: #313131;
     --gray-3: #2a2a2a;
 }
+
 @property --warning-color {
     syntax: "<color>";
     inherits: true;
@@ -26,7 +27,7 @@ a {
     text-decoration: none;
 }
 
-a[href^="http://"]:after, 
+a[href^="http://"]:after,
 a[href^="https://"]:after {
     content: url(http://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png);
     margin: 0 0 0 5px;
@@ -42,12 +43,13 @@ header {
 }
 
 header .logo-main {
-	color: green;
-	-webkit-text-stroke: 1px #005B00;
+    color: green;
+    -webkit-text-stroke: 1px #005B00;
 }
+
 header .logo-sub {
-	-webkit-text-stroke: 1px #C77F00;
-	color: gold;
+    -webkit-text-stroke: 1px #C77F00;
+    color: gold;
     font-size: small;
 }
 
@@ -61,6 +63,7 @@ header .menu {
     justify-content: right;
     color: #212121;
 }
+
 header .menu-1 {
     padding: 32px;
     margin: 0;
@@ -71,22 +74,30 @@ header .menu-1 {
     justify-content: left;
     color: #212121;
 }
+
 header .menu button {
     margin-top: -10px;
 }
 
 
 main {
-    width: 80ch;
+    /* width: 80ch; */
     margin: auto;
-    padding: 1rem 0 10rem 0;
+    /* padding: 1rem 0 10rem 0; */
 }
 
 .lead-body h1 {
     margin-top: 0;
 }
+
 .lead-body p:nth-child(1) {
     margin-bottom: 0;
+}
+
+.lead-header,
+.container {
+    width: 80ch;
+    margin: auto;
 }
 
 .container .title {
@@ -94,7 +105,7 @@ main {
     font-weight: bold;
 }
 
-.container > h5 {
+.container>h5 {
     margin-top: 0;
 }
 
@@ -104,16 +115,18 @@ main {
     overflow: hidden;
     z-index: 101;
     background-color: #E2E2E2;
-  }
+}
 
 .hero {
     height: 60vh;
     position: relative;
     color: #ffffffc4;
 }
+
 .hero.about {
     height: 30vh;
 }
+
 .hero .item {
     position: absolute;
     inset: 0 0 0 0;
@@ -121,19 +134,22 @@ main {
     opacity: 0;
     /* transition: 1s; */
 }
+
 .hero .item img {
-    width: 100vw;
     zoom: 133%;
     margin-top: -5em;
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+    min-width: 900px;
 }
+
 .hero.about .item img {
     width: 100vw;
-    zoom: 100% !important; 
+    zoom: 100% !important;
     margin-top: -5em;
 }
+
 .hero .item::after {
     content: '';
     width: 100%;
@@ -142,6 +158,7 @@ main {
     left: 0;
     bottom: 0;
 }
+
 .hero .item .content {
     position: absolute;
     left: 11rem;
@@ -151,25 +168,26 @@ main {
     z-index: 1;
     color: #eee;
 }
+
 .hero .item .content p:nth-child(1) {
     text-transform: uppercase;
     letter-spacing: 10px;
     font-size: 0.7em;
     text-shadow: #212121 1px 1px 5px;
 }
-/* .hero .item .content p:nth-child(2) {
-    margin: 0;
-} */
+
 .hero .item .content h2 {
     font-size: calc(3vw + 2vmin);
     font-weight: bold;
     margin: 0;
     line-height: 3.2rem;
 }
+
 .hero .item .content button {
     height: 50px;
     border-radius: 10px;
 }
+
 .hero .item.active {
     opacity: 1;
     z-index: 10;
@@ -178,49 +196,18 @@ main {
 
 
 @keyframes showContent {
-    to{
+    to {
         transform: translateY(0);
         filter: blur(0);
         opacity: 1;
     }
 }
 
-.thumbnail {
-    position: relative;
-    z-index: 11;
-    display: grid;
-    grid-template-columns: 160px 1fr 1fr 160px;
-    gap: 10px;
-    width: 100%;
-    height: 350px;
-    padding: 0 50px;
-    box-sizing: border-box;
-    overflow: auto;
-    text-align: center;
-    align-items: center;
-}
-.thumbnail::-webkit-scrollbar {
-    width: 0;
-}
-.thumbnail .item {
-    width: 200px;
-    height: 220px;
-    margin: auto;
-}
-.thumbnail .item p:nth-child(2) {
-    font-weight: bold;
-}
-.thumbnail div:nth-child(1) {
-    grid-column: 2;
-}
-.thumbnail div:nth-child(2) {
-    grid-column: 3;
-}
-
 .benefits {
     display: flex;
     margin: 4rem auto;
 }
+
 .benefits .item {
     display: flex;
     flex-direction: column;
@@ -230,51 +217,72 @@ main {
     min-width: 8rem;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
+    .hero::after {
+        content: 'test';
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .hero {
+        min-width: 900px;
+        overflow: hidden;
+
+    }
+
     .hero .item .content {
         left: 10%;
-        width: 85vw;
+        width: 100vw;
     }
 }
 
 /* CSS */
 .button-7 {
-  background-color: goldenrod;
-  border: 1px solid transparent;
-  border-radius: 3px;
-  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
-  box-sizing: border-box;
-  color: #212121;
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
-  font-weight: 700;
-  line-height: 1.15385;
-  outline: none;
-  padding: 8px .8em;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  white-space: nowrap;
+    background-color: goldenrod;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #212121;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-weight: 700;
+    line-height: 1.15385;
+    outline: none;
+    padding: 8px .8em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
 }
+
 .button-7:hover,
 .button-7:focus {
-  background-color: #07c;
+    background-color: #07c;
 }
+
 .button-7:focus {
-  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
 }
+
 .button-7:active {
-  background-color: #0064bd;
-  box-shadow: none;
+    background-color: #0064bd;
+    box-shadow: none;
 }
 
 footer {
-    display: flex ;
+    display: flex;
     height: 300px;
     background-image: radial-gradient(circle farthest-side, #fceabb, #f8b500);
     justify-content: center;
@@ -284,7 +292,7 @@ footer {
 .col-2 {
     display: flex;
     gap: 8rem;
-  }
+}
 
 
 .problem-body {
@@ -296,17 +304,21 @@ footer {
     font-size: 24px;
     min-height: 400px;
 }
+
 .problem-body div {
     width: 468px;
     margin: auto 10px;
 }
+
 .problem-body img {
     max-width: 100%;
     border-radius: 16px;
 }
+
 .problem-body h3 {
     font-size: 24px;
 }
+
 .bg-white {
     color: #212121 !important;
     background: white !important;
@@ -318,6 +330,7 @@ footer {
     overflow: hidden;
     line-height: 0;
 }
+
 .wave-position-top {
     position: absolute;
     top: 0;
@@ -326,23 +339,26 @@ footer {
     overflow: hidden;
     line-height: 0;
 }
+
 .wave svg {
     position: relative;
     display: block;
     width: calc(132% + 1.3px);
     height: 120px;
-    
+
 }
 
 .wave .shape-fill {
     fill: black;
 }
+
 .wave-white {
     position: relative;
     width: 100%;
     overflow: hidden;
     line-height: 0;
 }
+
 .wave-white svg {
     position: relative;
     display: block;
@@ -350,40 +366,64 @@ footer {
     height: 120px;
     background: #353535;
 }
+
 .wave-white .shape-fill-white {
     fill: white;
     /* background: black; */
 }
+
 .wave .shape-fill-reverse {
     fill: var(--gray-3);
 }
-.wave-filler {
-    /* background: #fff; */
-    min-height: 600px;
-    align-content: center;
-    color: #353535;
-    padding-bottom: 100px;
-}
+
 .wave-filler h2 {
     font-size: calc(2vw + 2vh + 2vmin);
-}
-.wave-filler .glow {
-    height: 30vh;
-    background-image: radial-gradient(circle farthest-side, #fceabb, #f8b500);
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    margin: 0;
 }
 
+.wave-filler {
+    align-content: center;
+    color: #353535;
+    height: 30vh;
+    background-image: radial-gradient(circle farthest-side, #fceabb, #f8b500);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.wave-filler button {
+    padding: 12px;
+    background-color: transparent;
+    border-style: none;
+    border: 1px solid black;
+}
+
+.wave-filler button:hover {
+    background-color: goldenrod;
+    color: #212121;
+}
+
+.wave-filler p {
+    margin-top: -16px;
+}
+
+.faq-container {
+    margin-top: 6em;
+}
 .faq-container .item {
     margin-bottom: 2em;
 }
+
 .faq-container span {
     font-size: 1.3rem;
     font-weight: 600;
 }
 
-.sup { vertical-align: super; }
+.sup {
+    vertical-align: super;
+}
 
 .bg-glass {
     background: rgba(255, 255, 255, 0.5);
@@ -429,13 +469,13 @@ aside {
     box-shadow: inset 5px 0 5px -5px #29627e;
     font-style: italic;
     color: #29627e;
-  }
-  
-  aside > p {
-    margin: 0.5rem;
-  }
+}
 
- hr {
+aside>p {
+    margin: 0.5rem;
+}
+
+hr {
     display: block;
     height: 1px;
     border: 0;
@@ -482,29 +522,65 @@ aside {
 .breadcrumb {
     padding: 0 .5rem;
     font-size: small;
-  }
-  .breadcrumb a {
+}
+
+.breadcrumb a {
     text-decoration: underline;
-  }
-  
-  .breadcrumb ul {
+}
+
+.breadcrumb ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     margin: 0 0 0 10rem;
     padding: 0;
-  }
-  
-  .breadcrumb li:not(:last-child)::after {
+}
+
+.breadcrumb li:not(:last-child)::after {
     display: inline-block;
     margin: 0 .25rem;
     content: "→";
-  }
+}
 
-  a[href^='mailto']::before {
+a[href^='mailto']::before {
     content: '📧 ';
-  }
-  
-  a[href^='tel']::before {
+}
+
+a[href^='tel']::before {
     content: '📞 ';
-  }
+}
+
+.heres-how {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.heres-how img {
+    border-radius: 100%;
+    border: solid 1px #353535;
+}
+
+.heres-how div {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heres-how div p:nth-child(2) {
+    font-weight: bold;
+}
+
+.heres-how div p:nth-child(3) {
+    font-size: small;
+    width: 16em;
+    text-align: center;
+}
+
+.training div:has(img) {
+    float: right;
+}
+.training img {
+    border-radius: 12px;
+    width: 12em;
+}
