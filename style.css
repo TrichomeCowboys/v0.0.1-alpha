@@ -14,7 +14,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 body {
@@ -35,11 +35,15 @@ a[href^="https://"]:after {
 
 header {
     display: grid;
-    grid-template-columns: 40px 100fr 300fr 1fr 1fr 40px;
+    grid-template-columns: 6rem 100fr 300fr 1fr 1fr 40px;
     grid-template-rows: 70px;
     align-items: center;
-    padding-left: 20px;
-    background-color: #21212121;
+    /* padding-left: 20px; */
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 101;
+    background-color: #E2E2E2;
 }
 
 header .logo-main {
@@ -59,11 +63,16 @@ header .menu {
     list-style: none;
     display: flex;
     gap: 60px;
-    font-weight: 500;
+    /* font-weight: 500; */
     justify-content: right;
+}
+header .menu a {
     color: #212121;
 }
-
+header .menu a:hover {
+    color: #212121;
+    text-decoration: underline;
+}
 header .menu-1 {
     padding: 32px;
     margin: 0;
@@ -107,14 +116,6 @@ main {
 
 .container>h5 {
     margin-top: 0;
-}
-
-#navbar {
-    position: sticky;
-    top: 0;
-    overflow: hidden;
-    z-index: 101;
-    background-color: #E2E2E2;
 }
 
 .hero {
@@ -161,31 +162,37 @@ main {
 
 .hero .item .content {
     position: absolute;
-    left: 11rem;
-    top: 5rem;
-    width: 40vw;
-    max-width: 80%;
+    left: 6rem;
+    top: 2rem;
+    /* width: 40vw; */
+    max-width: 45%;
     z-index: 1;
     color: #eee;
 }
 
 .hero .item .content p:nth-child(1) {
-    text-transform: uppercase;
-    letter-spacing: 10px;
+    /* text-transform: uppercase;*/
+    letter-spacing: 2px; 
     font-size: 0.7em;
-    text-shadow: #212121 1px 1px 5px;
+    /* text-shadow: #212121 1px 1px 5px; */
 }
-
+.hero .item .content p:nth-child(3) {
+    font-size: 1rem;
+    margin: 1rem 0 0 0;
+}
 .hero .item .content h2 {
-    font-size: calc(3vw + 2vmin);
+    font-size: 2rem;
+    /* font-size: calc(1vw + 1rem); */
     font-weight: bold;
     margin: 0;
-    line-height: 3.2rem;
+    line-height: 2.5rem;
 }
 
 .hero .item .content button {
     height: 50px;
-    border-radius: 10px;
+    border-radius: 6px;
+    margin: 1rem 0 0 0;
+
 }
 
 .hero .item.active {
@@ -256,7 +263,7 @@ main {
     font-weight: 700;
     line-height: 1.15385;
     outline: none;
-    padding: 8px .8em;
+    padding: 8px 2em;
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -300,14 +307,17 @@ footer {
     flex-direction: row;
     justify-content: center;
     gap: 50px;
-    text-align: center;
+    /* text-align: center; */
     font-size: 24px;
     min-height: 400px;
 }
 
 .problem-body div {
-    width: 468px;
-    margin: auto 10px;
+    width: 24rem;
+    /* margin: auto 10px; */
+}
+.problem-body .product-image {
+    width: 22rem;
 }
 
 .problem-body img {
@@ -572,7 +582,7 @@ a[href^='tel']::before {
 }
 
 .heres-how div p:nth-child(3) {
-    font-size: small;
+    font-size: smaller;
     width: 16em;
     text-align: center;
 }
@@ -583,4 +593,61 @@ a[href^='tel']::before {
 .training img {
     border-radius: 12px;
     width: 12em;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dl,
+dd {
+    font-size: 0.9rem;
+}
+
+dd {
+    margin-bottom: 1em;
+}
+
+.container-gauge {
+    margin: 1rem auto;
+}
+.container-gauge h5 {
+    margin: 0;
+}
+.container-gauge ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.container-gauge li {
+    display: inline;
+    padding: .2rem;
+}
+.container-gauge button {
+    padding: .5rem 1rem;
+    margin-bottom: .5rem;
+}
+.container-quantity .paypal {
+    background-color: goldenrod;
+    display: block;
+    width: 100%;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    margin-top: 6px;
+}
+.container-quantity .cart {
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    display: inline;
+    width: 60%;
+}
+.container-quantity {
+    display: inline;
+}
+.container-quantity h5 {
+    margin: 0;
+}
+.container-quantity .quantity {
+    height: 1.5rem;
+    border-radius: 5px;
 }
