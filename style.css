@@ -66,13 +66,16 @@ header .menu {
     /* font-weight: 500; */
     justify-content: right;
 }
+
 header .menu a {
     color: #212121;
 }
+
 header .menu a:hover {
     color: #212121;
     text-decoration: underline;
 }
+
 header .menu-1 {
     padding: 32px;
     margin: 0;
@@ -172,14 +175,16 @@ main {
 
 .hero .item .content p:nth-child(1) {
     /* text-transform: uppercase;*/
-    letter-spacing: 2px; 
+    letter-spacing: 2px;
     font-size: 0.7em;
     /* text-shadow: #212121 1px 1px 5px; */
 }
+
 .hero .item .content p:nth-child(3) {
     font-size: 1rem;
     margin: 1rem 0 0 0;
 }
+
 .hero .item .content h2 {
     font-size: 2rem;
     /* font-size: calc(1vw + 1rem); */
@@ -316,6 +321,7 @@ footer {
     width: 24rem;
     /* margin: auto 10px; */
 }
+
 .problem-body .product-image {
     width: 22rem;
 }
@@ -422,6 +428,7 @@ footer {
 .faq-container {
     margin-top: 6em;
 }
+
 .faq-container .item {
     margin-bottom: 2em;
 }
@@ -564,6 +571,7 @@ a[href^='tel']::before {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
 }
 
 .heres-how img {
@@ -577,6 +585,7 @@ a[href^='tel']::before {
     flex-direction: column;
     align-items: center;
 }
+
 .heres-how div p:nth-child(2) {
     font-weight: bold;
 }
@@ -590,6 +599,7 @@ a[href^='tel']::before {
 .training div:has(img) {
     float: right;
 }
+
 .training img {
     border-radius: 12px;
     width: 12em;
@@ -611,22 +621,27 @@ dd {
 .container-gauge {
     margin: 1rem auto;
 }
+
 .container-gauge h5 {
     margin: 0;
 }
+
 .container-gauge ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
 .container-gauge li {
     display: inline;
     padding: .2rem;
 }
+
 .container-gauge button {
     padding: .5rem 1rem;
     margin-bottom: .5rem;
 }
+
 .container-quantity .paypal {
     background-color: goldenrod;
     display: block;
@@ -635,19 +650,76 @@ dd {
     border-radius: 5px;
     margin-top: 6px;
 }
+
 .container-quantity .cart {
     padding: .5rem 1rem;
     border-radius: 5px;
     display: inline;
     width: 60%;
 }
+
 .container-quantity {
     display: inline;
 }
+
 .container-quantity h5 {
     margin: 0;
 }
+
 .container-quantity .quantity {
     height: 1.5rem;
     border-radius: 5px;
+}
+
+.stars {
+    display: flex;
+    transform: scale(.2);
+    width: 10px;
+}
+.stars::after {
+    content: '1 AI Generated Review';
+    transform: scale(2);
+}
+
+.star {
+    flex: 25%;
+    margin: 50px 0;
+    position: relative;
+    display: inline-block;
+    color: red;
+    width: 0px;
+    height: 0px;
+    border-right: 50px solid transparent;
+    border-bottom: 33px solid gold;
+    border-left: 50px solid transparent;
+    transform: rotate(35deg);
+}
+
+.star:before {
+    border-bottom: 40px solid gold;
+    border-left: 15px solid transparent;
+    border-right: 25px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -25px;
+    left: -30px;
+    display: block;
+    content: '';
+    transform: rotate(-32deg);
+}
+
+.star:after {
+    position: absolute;
+    display: block;
+    color: red;
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 0;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid gold;
+    border-left: 50px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
 }
