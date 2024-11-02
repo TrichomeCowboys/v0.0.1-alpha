@@ -43,11 +43,12 @@
 html {
     scroll-behavior: smooth;
     font-size: 20px;
+    overflow-x: hidden;
 }
 
 body {
     font-family: Poppins;
-    margin: auto;
+    margin: 0;
     scroll-behavior: smooth;
 }
 
@@ -164,7 +165,7 @@ nav .menu button {
 .hero .item img {
     width: 100vw;
     height: 60vh;
-    border-bottom: .7rem solid var(--color-green-2);
+    border-bottom: .3rem solid var(--color-green-2);
 }
 
 .hero .item .content {
@@ -402,60 +403,8 @@ footer {
     background: white !important;
 }
 
-.wave {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.wave-position-top {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.wave svg {
-    position: relative;
-    display: block;
-    width: calc(132% + 1.3px);
-    height: 120px;
-
-}
-
-.wave .shape-fill {
-    fill: black;
-}
-
-.wave-white {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.wave-white svg {
-    position: relative;
-    display: block;
-    width: calc(132% + 1.3px);
-    height: 120px;
-    background: #353535;
-}
-
-.wave-white .shape-fill-white {
-    fill: white;
-    /* background: black; */
-}
-
-.wave .shape-fill-reverse {
-    fill: var(--gray-3);
-}
-
 .wave-filler h2 {
-    font-size: calc(2vw + 2vh + 2vmin);
+    font-size: var(--step-2);
     margin: 0;
 }
 
@@ -511,26 +460,6 @@ footer {
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(39, 186, 106, 0.06);
-}
-
-.custom-shape-divider-top-1727887149 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1727887149 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-}
-
-.custom-shape-divider-top-1727887149 .shape-fill {
-    fill: #FFFFFF00;
 }
 
 .col-container {
@@ -794,11 +723,11 @@ dd {
     content: '';
 }
 
-/* * {
+* {
     box-sizing: border-box;
   }
   
-  body {
+ /*  body {
     margin: 0px;
     font-family: 'segoe ui';
   } */
@@ -949,5 +878,9 @@ dd {
     }
     .problem-body div {
         margin: auto;
+    }
+
+    .container-benefits {
+        margin-top: 6rem;
     }
 }
