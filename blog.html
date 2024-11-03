@@ -5,44 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css" />
-    <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/kp-arts" title="KP Arts">KP Arts</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/muhammad-ali" title="Muhammad Ali">Muhammad Ali</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/leremy" title="Leremy">Leremy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/gravisio" title="gravisio">gravisio</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/prashanth-rapolu-15" title="Prashanth Rapolu 15">Prashanth Rapolu 15</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
-
+    <link rel="stylesheet" href="style.css"/>
 </head>
 
-<body class="fade">
-    <header id="navbar">
-        <div></div>
-        <div class="logo">
-            <span class='logo-main'><a href="index.html" style="text-decoration: none;">Sculpt<span
-                        class='logo-sub'>420</a></span>
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="logo">
+                HighWires<span class="sup">&reg;</span>
+            </div>
         </div>
-        <div>
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li>
-                    <button type='button' class="button-7">
-                        I want control
-                    </button>
-                </li>
-            </ul>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
         </div>
-    </header>
-    <div class="hero about">
-        <div class="item active">
+        
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#">Blog</a>
+            <button type='button' class="button-nav">
+                Take Control
+            </button>
+        </div>
+    </div>  
+    <div class="hero">
+        <div class="item">                
             <section class="banner">
-                <img src="images/wire_example_1_sm.png"/>
+                <img class="responsive" src="images/banner-image-1.png"/>
             </section>            
             <div class="content">
-                <p>HighWires<span class="sup">&reg;</span></p>
-                <h3>Interesting Info
-                </h3>
+                <p>Reinforcements have arrived.</p>
+                <h2>Things We Learned Along the Way</h2>
+                <!-- <p>
+                    Training builds a foundation for explosive growth and HighWires provide
+                    the foundation for extreme support. Reinforce your plants for exceptional 
+                    benefits.
+                </p> -->
+                <button type='button' class="button-nav">
+                    Take Control
+                </button>
+                
             </div>
         </div>
     </div>
-
+    
     <div class="breadcrumb">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -50,72 +61,131 @@
         </ul>
     </div>
 
-    <main>
-        <div class="container clearfix">
-            <h5>Interesting Info</h5>
-            <h1>Things We Learned Along the Way</h1>
-            <br/>
+    <div class="container-blog">
+        <h1>Common Issues</h1>
+        <p>We are standing the shoulders of giants here, not giving you information we thought up. [Need to make this better]</p>
+        <br/>
+        <hr/>
+        <h2>Supporting Heavy Buds</h2>
+        <span>What can I do when my plant is flopping over?</span>
+        <p>This is why HighWires exist! Weeks of work and one day it's flopping all over the place. 
+            HighWires solves this problem elegantly by quickly supporting any branch with a quick twist 
+            (solves everything). Branches are supported and can be moved and positioned easily any time. 
+            This WILL solve your problem.</p>
+        <a class="read-more" href="">Read more ></a>
+        <hr/>
 
-            <h2>Supporting Heavy Buds</h2>
-            <p>
-                This would be some thoughtful discussion on why you need 
-                to support, types of support systems available and why 
-                ours is superior.
-            </p>
-            <a class="read-more" href="">Read more ></a>
-            <hr/>
+        <h2>How to Embiggen Small Flowers</h2>
+        <span>Why are my flowers small and not dense?</span>
+        <p>Popcorn buds.<br/>
+            Most likely a combination of issues and not just one thing. 
+            Light is the probably the biggest contributing factor. Exposing the flowers
+            to as much light as possible is obviously key.
+        </p>
+        <p>
+            If the CO2 levels in your grow space drop below 400 [double check] then the plant 
+            will just stop growing. Best bet is to get a cheap CO2 meter and that will let you 
+            know what your situation is. The CO2 bags seem to work great [add link to one or more].
+        </p>
+        <p>
+            Cannabis likes it hot, around the mid 80s, so get those temperatures up there. [Bugbee]
+        </p>
+        <p>
+            Humidity affects the plants respiration. When humidity levels get too high, stomata close and 
+            the plant will not pull nutrients up and hence will stall growth. 
+        </p>
+        <p>
+            Nutrients will also make a big difference [add name of current nutes].
+        </p>
+        
+        For more details, Dr Bruce Bugbee
+        <a href="https://www.youtube.com/watch?app=desktop&v=Q8tqbUJbNSY">How to increase yield and quality with Dr Bruce Bugbee</a>
+        <hr/>
 
-            <h2>How to Embiggen Small Flowers</h2>
-            <p>
-                Different things that cause flowers to not reach their 
-                potential. Light, air flow et. al. and how to turn that around.
-            </p>
-            <a class="read-more" href="">Read more ></a>
-            <hr/>
 
-            <h2>Factors that Influence Resin Production</h2>
-            <p>
-                List out things like light, stress, nutrients, timing and 
-                so on. Need to include links to sites and YouTube videos 
-                that give solid advice. A site like <a href="https://www.perfectgardens.com">Perfect Gardens</a> 
-                would be a good example.
-            </p>
-            <a class="read-more" href="">Read more ></a>
-            <hr/>
+        <h2>Factors that Influence Resin Production</h2>
+        <span>How can I increase resin production?</span>
+        <p>Light is the single biggest factor in resin production next to a solid nutrient plan.</p>
+        <a href="https://www.perfectgardens.com">Perfect Gardens</a>
+        <hr/>
 
-            <h2>Killing the Shit Out of Powdery Mildew</h2>
-            <p>
-                Humidity control, using Mold Control spray, CannControl, air flow. Heat to kill. Stuff in water for systemic action. Foliar spray and an IPC strategy. This would be a good spot for links to sites that support these conclusions.
+        <h2>Killing the Shit Out of Powdery Mildew</h2>
+        <span>How can I control mold and powdery mildew during flowering?</span>
+        <p>Air flow will help control spots within the plant that contribute to mold growth. Mold wants 
+            shade and moisture, so pockets in between the flowers is where the potential for growth is at a 
+            maximum. A combination of LST, HighWires and a defoliation plan (link) will give you the best 
+            chance for preventing mold without the use of sprays or other maintenance (link to CannControl 
+            because that shit works).
             </p>
-            <p>
-                This is a good spot for an idea on using heat to kill PM. 
-            </p>
-            <a class="read-more" href="">Read more ></a>
-            <hr/>
+        <p>
+            Humidity control, using Mold Control spray, CannControl, air flow. Heat to kill. Stuff in water for systemic action. Foliar spray and an IPC strategy. This would be a good spot for links to sites that support these conclusions.
+        </p>
+        <p>
+            This is a good spot for an idea on using heat to kill PM. 
+        </p>
+        <a class="read-more" href="">Read more ></a>
+        <hr/>
 
-            <h2>Get the Colors to Pop</h2>
-            <p>
-                Explain about the color being controlled by light exposure. Reference YouTube video for Canna Cribs with Dr Robb.
+        <h2>Get the Colors to Pop</h2>
+        <span>How can I get more colors?</span>
+        <p>Light determines the purple color (Dr Rob on YouTube), so the more exposure the more spectacular 
+            your end result will be. Nutrition plays a part in that too some I think...
             </p>
-            <a class="read-more" href="">Read more ></a>
-            <hr/>
+        <p>Get the specific time stop for this <a href="https://www.youtube.com/watch?v=BsQuzeQA4w4">Hybrid Farms: Dr. Robb Farms and Palomar Craft Cannabis (CannaCribs)</a></p>
+        <p>Cold weather turned the leaves on the trees.</p>
+        <hr/>
 
-            <h2>Restart Stalled Growth</h2>
-            <p>
-                Use Dr. Bugbee video to talk about CO2 stalling growth. Nutrient balance. Also, if the leaves can't transpire correctly, the plant won't uptake nutrients.
+        <h2>Restart Stalled Growth</h2>
+        <span>Why are my plants just not growing?</span>
+        <p>CO2 plays a big part in this. Less than 400ppm (?) and the plant just stops growing. This could also 
+            be a combination of different factors working together against you. The advantage you get with the 
+            HighWires system is that you can quickly and easily train and support your plant. So now you can focus 
+            on nutrients, pH, lights, air flow, temperature; well you get the idea. Getting your plant in a position 
+            for the best light and air flow, then not having to worry about that, is what you need.
+        </p>
+        <p>
+            Use Dr. Bugbee video to talk about CO2 stalling growth. Nutrient balance. Also, if the leaves can't transpire correctly, the plant won't uptake nutrients.
+        </p>
+        <a class="read-more" href="">Read more ></a>
+        <hr/>
+
+        <h2>Trim Your Bush</h2>
+        <span>It's just tall and bushy, what can I do?</span>
+        <p>I hate trimming. And despise trimming large bushy plants that I think will be yield monsters but 
+            instead give me many many small bud. At Sculpt420 we advocate for defoliation and trimming out 
+            small lower branches. When the plant has been trained and supported with HighWires every bud on 
+            your plant will have excellent air flow and maximum light exposure. By the end of flowering, you 
+            will have a plant that is almost completely buds. Hard, sticky, colorful buds that are top quality 
+            with very little trim. Two foot plants yield 6-7 oz. each.
             </p>
-            <a class="read-more" href="">Read more ></a>
-            <hr/>
+        <a class="read-more" href="">[Reference Grow Weed Easy here]</a>
 
-            <h2>Trim Your Bush</h2>
-            <p>
-                Talk about defoliating and the benefits of air flow and light exposure. Topping and training to achieve a smaller, denser and bud filled plant.
-            </p>
-            <a class="read-more" href="">Read more ></a>
-
+    </div>
+    <footer id="contact">
+        <div class="col-2">
+            <div>
+                <h4>Where We Are</h4>
+                <address>
+                    Trichome Cowboys<br/>
+                    777 Hidden Springs<br/>
+                    Nashville, TN 37207<br/>
+                    USA<br/>
+                </address>
+            </div>
+            
+            <div>
+                <h4>Email Us</h4>
+                <address>
+                    <a href="mailto:highwires@sculpt420.com">highwires@sculpt420.com</a>
+                </address>
+            </div>
+            <div>
+                <h4>Call Us</h4>
+                <address>
+                    <a href="tel:6155551212">(615) 555-1212</a>
+                </address>
+            </div>
         </div>
-    </main>
-    <footer id="contact">This is where the info goes to <strong>Contact Us</strong></footer>
-
+    </footer>
 </body>
 </html>
